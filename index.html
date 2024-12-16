@@ -13,27 +13,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- --------------class for font style-------------- -->
      <style>
-        .poppins-bold {
+        .poppins {
         font-family: "Poppins", serif;
-        font-weight: 700;
-        }
-        .poppins-regular {
-        font-family: "Poppins", serif;
-        font-weight: 400;
-        }
-        .poppins-semibold{
-        font-family: "Poppins", serif;
-        font-weight: 600;
         }
      </style>
+     <!-- --------------tailwind customize configuration ----------- -->
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'bike-primary': '#e76f51',
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body>
+<body class="poppins">
     <!-- ----------header section start here--------- -->
      <header class="">
         <!-- --------------navbar start here---------- -->
-        <nav class="">
+        <nav class="md:container md:mx-auto">
             <div class="navbar bg-base-100">
-                <div class="navbar-start">
+                <div class="flex-1">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                       <svg
@@ -51,27 +55,35 @@
                     </div>
                     <ul
                       tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+                      class="menu menu-sm dropdown-content bg-base-100 text-base rounded-box z-[1] mt-3 w-52 p-2 shadow ">
                       <li><a>home</a></li>
                       <li><a>shop</a></li>
                       <li><a>news</a></li>
                       <li><a>contact</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-xl">Biker Zone</a>
+                  <a class="btn btn-ghost text-4xl">Biker Zone</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal  px-1 ">
+                  <ul class="menu menu-horizontal text-base px-1 ">
                     <li><a>home</a></li>
                     <li><a>shop</a></li>
                     <li><a>news</a></li>
                     <li><a>contact</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end">
-                    <a class="btn bg-[#e76f51]">login</a>
+                <div class="">
+                    <a class="btn bg-bike-primary">login</a>
                 </div>
         </nav>
      </header>
+     <!-- --------------main start here------------- -->
+      <main class="md:container md:mx-auto">
+
+      </main>
+      <!-- -------------------footer start here--------------- -->
+       <footer>
+        
+       </footer>
 </body>
 </html>
