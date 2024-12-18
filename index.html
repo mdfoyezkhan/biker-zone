@@ -16,6 +16,14 @@
         .poppins {
         font-family: "Poppins", serif;
         }
+        #for-after::after{
+          content: '';
+          width: 100px;
+          height: 2px;
+          background: #e76f51;
+          display: block;
+          margin: auto;
+        }
      </style>
      <!-- --------------tailwind customize configuration ----------- -->
      <script>
@@ -153,7 +161,16 @@
      </header>
      <!-- --------------main start here------------- -->
       <main class="md:container md:mx-auto">
-
+        <!-- -----------------fetured bike in this year section ------------------ -->
+        <section class="justify-centersm: text-center my-10 grid justify-center ">
+          <h1 class="text-3xl sm:text-5xl font-semibold">fetured bikes in this year</h1>
+          <span id="for-after" class="text-bike-primary ">best bike  collection</span>
+          <div class="grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3 lg:gap-40 mt-16 ">
+            <img style="filter:grayscale(1) ;" src="images/others/feature-bike.png" alt="">
+            <img src="images/others/feature-bike.png" alt="">
+            <img style="filter:grayscale(1) ;" src="images/others/feature-bike.png" alt="">
+          </div>
+        </section>
       </main>
       <!-- -------------------footer start here--------------- -->
        <footer>
